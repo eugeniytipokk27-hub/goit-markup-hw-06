@@ -79,7 +79,7 @@
   color: #434455;
 }
 .portfolio {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .portfolio-card-content {
@@ -92,6 +92,7 @@
   .portfolio-list {
     flex-direction: row;
     column-gap: 24px;
+    row-gap: 72px;
   }
 
   .portfolio-item {
@@ -100,6 +101,10 @@
 }
 
 @media (min-width: 1158px) {
+  .portfolio {
+    padding: 120px 0;
+  }
+
   .portfolio-list {
     row-gap: 48px;
   }

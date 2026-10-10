@@ -27,6 +27,12 @@ a {
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  .site-logo {
+    padding: 16px 0;
+  }
+}
+
 .site-logo__accent {
   color: #4d5ae5;
 }

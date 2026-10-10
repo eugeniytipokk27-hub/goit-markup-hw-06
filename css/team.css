@@ -1,5 +1,5 @@
 .team {
-  padding: 120px 0 120px;
+  padding: 96px 0;
   background-color: #f4f4fd;
 }
 .team-title {
@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 72px;
   list-style: none;
   margin-top: 72px;
 }
@@ -99,6 +99,8 @@
 @media (min-width: 768px) {
   .team-list {
     flex-direction: row;
+    row-gap: 64px;
+    column-gap: 24px;
   }
 
   .team-member {
@@ -108,6 +110,10 @@
 }
 
 @media (min-width: 1158px) {
+  .team {
+    padding: 120px 0;
+  }
+
   .team-list {
     flex-wrap: nowrap;
   }
