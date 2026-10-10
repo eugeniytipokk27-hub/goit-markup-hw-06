@@ -20,8 +20,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/modal.css" />
-    <link rel="stylesheet" href="./css/mobile-menu.css" />
   </head>
   <body>
     <header id="header" class="site-header">
@@ -69,7 +67,9 @@
             aria-expanded="false"
             aria-label="Open mobile menu"
           >
-            <span class="menu-icon" aria-hidden="true"></span>
+            <svg class="menu-icon" width="24" height="24" aria-hidden="true">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
           </button>
         </div>
       </div>
@@ -93,7 +93,7 @@
 
       <section id="features" class="features">
         <div class="container">
-          <h2 class="sr-only">Our Features</h2>
+          <h2 class="sr-only">Our features</h2>
 
           <ul class="feature-list">
             <li class="feature-item">
@@ -701,15 +701,15 @@
           data-modal-close
           aria-label="Close contact form"
         >
-          <svg class="modal-close-icon" width="24" height="24" aria-hidden="true">
+          <svg class="modal-close-icon" width="8" height="8" aria-hidden="true">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
 
         <form class="modal-form">
-          <h2 class="modal-title" id="modal-title">
+          <p class="modal-title" id="modal-title">
             Leave your contacts and we will call you back
-          </h2>
+          </p>
 
           <div class="modal-field">
             <label class="modal-label" for="user-name">Name</label>

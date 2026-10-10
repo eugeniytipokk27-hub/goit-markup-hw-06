@@ -11,13 +11,14 @@ a {
 .header-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .site-logo {
   display: inline-flex;
   align-items: center;
   gap: 0;
-  margin-right: 76px;
+  margin-right: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -35,8 +36,12 @@ a {
 }
 
 .site-nav {
-  display: flex;
+  display: none;
   align-items: center;
+}
+
+.site-address {
+  display: none;
 }
 
 .nav-list {
@@ -46,6 +51,7 @@ a {
 }
 
 .nav-link {
+  display: block;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -70,14 +76,16 @@ a {
 
 .contact-list {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 12px;
   list-style: none;
 }
 
 .contact-link {
   font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: #434455;
   font-style: normal;
   transition: color 250ms ease;
@@ -99,4 +107,40 @@ a {
   height: 4px;
   border-radius: 2px;
   background-color: #404bbf;
+}
+
+@media (min-width: 768px) {
+  .site-logo {
+    margin-right: 120px;
+  }
+
+  .site-nav,
+  .site-address {
+    display: flex;
+  }
+
+  .site-address {
+    margin-left: auto;
+  }
+
+  .contact-list {
+    gap: 12px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .site-logo {
+    margin-right: 76px;
+  }
+
+  .contact-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 }
