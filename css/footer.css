@@ -30,6 +30,7 @@
   color: #f4f4fd;
   width: auto;
   margin-top: 16px;
+  text-align: left;
 }
 
 @media (max-width: 767px) {

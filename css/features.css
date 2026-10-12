@@ -100,4 +100,7 @@
     line-height: 1.2;
     font-weight: 500;
   }
+  .feature-text {
+    font-weight: 400;
+  }
 }
